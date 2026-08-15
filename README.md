@@ -13,10 +13,10 @@ Enhanced tree view for exploring and opening project files.
 - **Debounced file watching**: Rapid file creation/deletion no longer causes excessive reloads. File system events are batched with a 100ms debounce.
 - **Survives workspace restoration**: The tree view is closeable via the X button, but protected from accidental destruction during project switching.
 - **Bug fixes**: Fixed expansion state serialization, drag-and-drop URI handling, copy dialog crash, move entry error handling, continuous selection, and split pane `ItemRegistry` error.
-- **Project list integration**: When the [project-list](https://github.com/asiloisad/pulsar-project-list) package is installed, the empty project view shows a "List projects" button.
-- **Recent list integration**: When the [recent-list](https://github.com/asiloisad/pulsar-recent-list) package is installed, the "Reopen a project" button opens the recent projects list instead of the built-in dialog.
+- **Project list integration**: When the [project-list](https://github.com/asiloisad-pulsar/project-list) package is installed, the empty project view shows a "List projects" button.
+- **Recent list integration**: When the [recent-list](https://github.com/asiloisad-pulsar/recent-list) package is installed, the "Reopen a project" button opens the recent projects list instead of the built-in dialog.
 - **Lightweight dependencies**: Removed `underscore-plus` and `fs-plus` in favor of native Node.js APIs.
-- **Special roots service**: Provides a `tree-view-roots` service that lets external packages inject virtual root sections into the tree view. Used by [tree-view-favourites](https://github.com/asiloisad/pulsar-tree-view-favourites) to add favourite sections.
+- **Special roots service**: Provides a `tree-view-roots` service that lets external packages inject virtual root sections into the tree view. Used by [tree-view-favourites](https://github.com/asiloisad-pulsar/tree-view-favourites) to add favourite sections.
 
 ## Installation
 
@@ -38,11 +38,11 @@ To install `tree-view-plus` search for [tree-view-plus](https://web.pulsar-edit.
 
 ## Consumed Service `project-list`
 
-When the [project-list](https://github.com/asiloisad/pulsar-project-list) package is installed, the empty project view (shown when no folders are open) gains a "List projects" button that toggles the project list.
+When the [project-list](https://github.com/asiloisad-pulsar/project-list) package is installed, the empty project view (shown when no folders are open) gains a "List projects" button that toggles the project list.
 
 ## Consumed Service `recent-list`
 
-When the [recent-list](https://github.com/asiloisad/pulsar-recent-list) package is installed, the "Reopen a project" button in the empty project view opens the recent projects list instead of the built-in Pulsar dialog.
+When the [recent-list](https://github.com/asiloisad-pulsar/recent-list) package is installed, the "Reopen a project" button in the empty project view opens the recent projects list instead of the built-in Pulsar dialog.
 
 ## Provided Service `tree-view`
 
@@ -105,7 +105,7 @@ The service provides everything from `tree-view`, plus:
 
 ## Provided Service `tree-view-roots`
 
-Allows external packages to inject virtual root sections into the tree view above the project folders. Used by [tree-view-favourites](https://github.com/asiloisad/pulsar-tree-view-favourites) to add favourite sections.
+Allows external packages to inject virtual root sections into the tree view above the project folders. Used by [tree-view-favourites](https://github.com/asiloisad-pulsar/tree-view-favourites) to add favourite sections.
 
 In your `package.json`:
 
