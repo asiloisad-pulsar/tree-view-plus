@@ -2,6 +2,9 @@
 
 Enhanced tree view for exploring and opening project files.
 
+> [!NOTE]
+> This package is in maintenance mode. If you use [Lumine](https://github.com/lumine-code/lumine), you may be interested in [tree-view](https://github.com/lumine-code/tree-view).
+
 ## Features
 
 - **Configurable click behavior**: Open files and expand folders on single or double click. Double-clicking a file always opens it without pending state. The arrow icon always responds to a single click regardless of the folder click setting.
